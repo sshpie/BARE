@@ -13,7 +13,7 @@
 
 # BARE
 
-[![CI](https://github.com/Nicholas-Kloster/BARE/actions/workflows/ci.yml/badge.svg)](https://github.com/Nicholas-Kloster/BARE/actions/workflows/ci.yml)
+[![CI](https://github.com/zellkernel/BARE/actions/workflows/ci.yml/badge.svg)](https://github.com/zellkernel/BARE/actions/workflows/ci.yml)
 
 **BARE** (Binary Anywhere Rust Encoder) maps security scanner findings to Metasploit modules via semantic search. It is a self-contained Rust binary with a BERT encoder and a 3,900+ exploit corpus embedded at compile time.
 
@@ -61,8 +61,8 @@ See [PRIOR_ART.md](PRIOR_ART.md) for the full comparison with release dates and 
 Download the latest pre-built binary from the Releases page:
 
 ```
-curl -LO https://github.com/Nicholas-Kloster/BARE/releases/latest/download/bare-linux-x86_64
-curl -LO https://github.com/Nicholas-Kloster/BARE/releases/latest/download/bare-linux-x86_64.sha256
+curl -LO https://github.com/zellkernel/BARE/releases/latest/download/bare-linux-x86_64
+curl -LO https://github.com/zellkernel/BARE/releases/latest/download/bare-linux-x86_64.sha256
 sha256sum -c bare-linux-x86_64.sha256
 chmod +x bare-linux-x86_64
 ```
@@ -72,10 +72,10 @@ The binary contains everything. BERT encoder, tokenizer, and 3,904 pre-encoded M
 ## Quick Start
 
 ### 1. Install
-Download the latest pre-built binary from the [Releases](https://github.com/Nicholas-Kloster/BARE/releases) page:
+Download the latest pre-built binary from the [Releases](https://github.com/zellkernel/BARE/releases) page:
 
 ```
-git clone https://github.com/Nicholas-Kloster/BARE
+git clone https://github.com/zellkernel/BARE
 cd BARE
 curl -L -o assets/model.safetensors \
   https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/model.safetensors
@@ -419,6 +419,6 @@ The embedded model weights (`sentence-transformers/all-MiniLM-L6-v2`) are Apache
 
 ## About
 
-Maintained by **[Nicholas Michael Kloster](https://github.com/Nicholas-Kloster)** as part of [**NuClide**](https://nuclide-research.com) — independent AI infrastructure security research.
+Maintained by **[Nicholas Michael Kloster](https://github.com/zellkernel)** as part of [**NuClide**](https://zellkernel.com) — independent AI infrastructure security research.
 
 CISA disclosures: [CVE-2025-4364](https://nvd.nist.gov/vuln/detail/CVE-2025-4364) · [ICSA-25-140-11](https://www.cisa.gov/news-events/ics-advisories/icsa-25-140-11)

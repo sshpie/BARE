@@ -5,7 +5,7 @@ edition = "2021"
 license = "MIT OR Apache-2.0"
 authors = ["Nicholas Kloster"]
 description = "Semantic search for security scanner findings as a single Rust binary."
-repository = "https://github.com/Nicholas-Kloster/BARE"
+repository = "https://github.com/zellkernel/BARE"
 
 [dependencies]
 # Hugging Face Rust ML framework

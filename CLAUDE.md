@@ -8,11 +8,11 @@ Rust (Candle for inference; sentence-transformers all-MiniLM-L6-v2 embedded as m
 ## Build & Run
 ```
 # Pre-built binary (recommended)
-curl -LO https://github.com/Nicholas-Kloster/BARE/releases/latest/download/bare-linux-x86_64
+curl -LO https://github.com/zellkernel/BARE/releases/latest/download/bare-linux-x86_64
 chmod +x bare-linux-x86_64
 
 # Or build from source (requires Rust toolchain + downloaded model weights)
-git clone https://github.com/Nicholas-Kloster/BARE
+git clone https://github.com/zellkernel/BARE
 cd BARE
 curl -L -o assets/model.safetensors <release-model-URL>
 cargo build --release
